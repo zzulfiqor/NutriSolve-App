@@ -14,7 +14,7 @@ class MainWelcomingContainer extends StatelessWidget {
     var screensize = MediaQuery.of(context).size;
     return Obx(
       () => AnimatedContainer(
-        duration: Duration(milliseconds: 250),
+        duration: Duration(milliseconds: 150),
         height: (welcomingController.welcoming_page_state ==
                 welcomingPageState.initial_state)
             ? screensize.height * 0.36
@@ -37,7 +37,7 @@ class MainWelcomingContainer extends StatelessWidget {
           //
           // child
           child: AnimatedSwitcher(
-            duration: Duration(milliseconds: 200),
+            duration: Duration(milliseconds: 100),
             child: (welcomingController.welcoming_page_state ==
                     welcomingPageState.initial_state)
                 ? MainContainerWelcoming(

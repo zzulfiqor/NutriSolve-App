@@ -213,7 +213,32 @@ class MainContainerLogin extends StatelessWidget {
                     primary: main_color,
                   ),
                   onPressed: () {
-                    Get.to(() => HomePage());
+                    Get.defaultDialog(
+                      barrierDismissible: false,
+                      title: "",
+                      titleStyle: text_size_small,
+                      content: Container(
+                        child: Column(
+                          children: [
+                            //
+                            // Lottie Animation Success
+                            SizedBox(
+                                height: 50,
+                                width: 50,
+                                child: CircularProgressIndicator()),
+                            //
+                            // Spacer
+                            SizedBox(
+                              height: 15,
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                    Future.delayed(Duration(seconds: 2), () {
+                      Get.back();
+                      Get.to(() => HomePage());
+                    });
                   },
                   child: Text("Sign In"),
                 ),

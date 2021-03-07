@@ -31,6 +31,7 @@ dependencies:
   freezed_annotation: null
   get: ^3.25.4
   json_serializable: ^4.0.0
+  lottie: ^1.0.0
   modal_bottom_sheet: ^1.0.0+1
   scroll_snap_list: ^0.6.0
   shimmer: ^1.1.2
@@ -40,7 +41,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner: ^1.11.5
-  flutter_native_splash: ^0.3.0
+  flutter_native_splash: ^1.0.3
   freezed: null
 
 # For information on the generic Dart part of this file, see the
@@ -56,6 +57,7 @@ flutter:
   assets:
     - assets/images/
     - assets/font/
+    - assets/lottie/
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

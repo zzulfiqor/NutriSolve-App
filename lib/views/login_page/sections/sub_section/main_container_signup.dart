@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 import 'package:nutrisolve_app/common/values/appcolor.dart';
 import 'package:nutrisolve_app/common/values/appsize.dart';
 import 'package:nutrisolve_app/common/values/mytext_style.dart';
@@ -264,7 +265,43 @@ class MainContainerSignup extends StatelessWidget {
                   primary: main_color,
                 ),
                 onPressed: () {
-                  Get.to(() => HomePage());
+                  Get.defaultDialog(
+                    barrierDismissible: false,
+                    title: "",
+                    titleStyle: text_size_small,
+                    content: Container(
+                      child: Column(
+                        children: [
+                          //
+                          // Lottie Animation Success
+                          SizedBox(
+                            height: 100,
+                            width: 100,
+                            child: Lottie.asset(
+                              "assets/lottie/success.json",
+                            ),
+                          ),
+                          //
+                          // Spacer
+                          SizedBox(
+                            height: 15,
+                          ),
+                          //
+                          // Text Sign Up Success
+                          Text("Sign Up Succesful"),
+                          //
+                          // Spacer
+                          SizedBox(
+                            height: 15,
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
+                  Future.delayed(Duration(seconds: 3), () {
+                    Get.back();
+                    c.setWelcomingToInitialPageState();
+                  });
                 },
                 child: Text("Sign Up"),
               ),

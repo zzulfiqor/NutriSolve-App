@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
                 color: main_color,
                 image: DecorationImage(
                     image: NetworkImage(
-                        "https://www.printawallpaper.com/wp-content/uploads/2020/07/Green_Leaves_Pattern_dn.jpg"),
+                        "https://previews.123rf.com/images/marilyna/marilyna1712/marilyna171200055/91459259-superfood-concept-for-healthy-eating-with-health-food-of-fruit-vegetables-grain-cereals-seeds-herbs-.jpg"),
                     fit: BoxFit.cover),
               ),
               child: BackdropFilter(

@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins',
         primaryColor: main_color,
-        splashColor: main_color,
+        splashColor: main_color.withOpacity(.2),
       ),
       home: LoginPage(),
     );

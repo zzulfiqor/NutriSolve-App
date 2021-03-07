@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
       height: MediaQuery.of(context).size.height,
       child: Stack(
         children: [
-          // 
+          //
           // base background
           Container(
             color: main_color,
@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // 
+                    //
                     // avatar and Name
                     Ink(
                       child: Row(
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                                     color: Colors.white,
                                   ),
                                 ),
-                                Text("Ahmad Zuhair Dzulfiqor",
+                                Text("The Administrator",
                                     style: text_size_regular.copyWith(
                                       fontWeight: fontWeight_medium,
                                       color: Colors.white,
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    // 
+                    //
                     // notification button
                     IconButton(
                         icon: Icon(

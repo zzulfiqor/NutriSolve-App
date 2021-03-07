@@ -4,6 +4,8 @@ import 'package:nutrisolve_app/common/values/appcolor.dart';
 import 'package:nutrisolve_app/common/values/appsize.dart';
 import 'package:nutrisolve_app/common/values/mytext_style.dart';
 import 'package:nutrisolve_app/views/home_page/beneficiary_item_widget.dart';
+import 'package:nutrisolve_app/views/notification_page/notification_page.dart';
+import 'package:nutrisolve_app/views/profile_page/profile_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,6 +15,7 @@ class HomePage extends StatelessWidget {
       height: MediaQuery.of(context).size.height,
       child: Stack(
         children: [
+          // 
           // base background
           Container(
             color: main_color,
@@ -24,13 +27,14 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    // 
                     // avatar and Name
                     Ink(
                       child: Row(
                         children: [
                           GestureDetector(
                             onTap: () {
-                              print("Avatar Clicked");
+                              Get.to(() => ProfilePage());
                             },
                             child: CircleAvatar(
                               radius: 25,
@@ -63,8 +67,8 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                     ),
-
-                    // notification
+                    // 
+                    // notification button
                     IconButton(
                         icon: Icon(
                           Icons.notifications_rounded,
@@ -73,6 +77,7 @@ class HomePage extends StatelessWidget {
                         ),
                         onPressed: () {
                           print("Tapped Notification");
+                          Get.to(() => NotificationPage());
                         })
                   ],
                 ),

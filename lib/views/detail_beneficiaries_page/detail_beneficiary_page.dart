@@ -73,7 +73,7 @@ class DetailBeneficiaryPage extends StatelessWidget {
                       children: [
                         Positioned.fill(
                           child: Image.network(
-                            'https://www.indiewire.com/wp-content/uploads/2019/11/960x0-2.jpg',
+                            'https://image.freepik.com/free-vector/happy-kids-illustration_23-2147531060.jpg',
                             fit: BoxFit.cover,
                           ),
                         ),

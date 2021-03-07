@@ -55,7 +55,7 @@ class _DetailInformationState extends State<DetailInformation> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Baby Yoda The Number Seven Seven",
+                      "Abdul Tintin",
                       style: text_size_medium.copyWith(
                           fontWeight: fontWeight_semibold),
                       overflow: TextOverflow.ellipsis,
